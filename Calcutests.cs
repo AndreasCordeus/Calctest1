@@ -18,6 +18,20 @@ public class CalculatorTests
         // then
         Assert.Equal(expectedResult, result);
     }
+    [Fact]
+    public void TestSubtraction()
+    {
+        // given 
+        Calculator calc = new();
+        int a = 6;
+        int b = 2;
+        int expectedResult = 4;
 
+        // when
+        int result = calc.Subtract(a, b);
+
+        // then
+        Assert.Equal(expectedResult, result);
+    }
 
 }
